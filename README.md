@@ -25,11 +25,11 @@ The generated random name output.
 ## Example usage
 
 ```
-uses: TGPSKI/name-generator-node-action@master
+uses: TGPSKI/name-generator-node-action@v2
 ```
 
 ```
-uses: TGPSKI/name-generator-node-action@master
+uses: TGPSKI/name-generator-node-action@v2
 with:
   separator: '_'
   length: '4'
