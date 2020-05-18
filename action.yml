@@ -15,7 +15,7 @@ inputs:
     default: 'lowerCase'
 outputs:
   name:
-    description: 'The random name output'
+    description: 'The generated random name output.'
 runs:
   using: 'node12'
-  main: 'index.js'
+  main: 'dist/index.js'
