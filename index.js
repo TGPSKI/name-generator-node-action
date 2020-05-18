@@ -10,7 +10,8 @@ try {
     }
     const output = uniqueNamesGenerator(config)
     console.log(`Generated name: ${output}`)
-    core.setOutput('name', output)
+    core.setOutput('generated_name', output)
+    core.exportVariable('generated_name', output)
 } catch (error) {
     core.setFailed(error.message)
 }
