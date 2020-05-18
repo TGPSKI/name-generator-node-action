@@ -30,8 +30,12 @@ uses: TGPSKI/name-generator-node-action@v2
 
 ```
 uses: TGPSKI/name-generator-node-action@v2
+id: generator
 with:
   separator: '_'
   length: '4'
   style: 'upperCase'
+
+name: test generator output
+run: echo "latest,${{ steps.generator.outputs.name }}"
 ```
