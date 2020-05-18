@@ -1,17 +1,24 @@
 {
   "name": "name-generator-node-action",
   "version": "1.0.0",
-  "description": "",
+  "description": "This action creates a random name and outputs it to Github Actions environment variables. [unique-names-generator](https://github.com/andreasonny83/unique-names-generator) is used to generate the random names.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TGPSKI/name-generator-node-action.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TGPSKI/name-generator-node-action/issues"
+  },
+  "homepage": "https://github.com/TGPSKI/name-generator-node-action#readme",
   "dependencies": {
     "@actions/core": "^1.2.4",
-    "@actions/github": "^2.2.0",
     "unique-names-generator": "^4.2.0"
   }
 }
