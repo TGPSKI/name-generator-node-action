@@ -1,0 +1,21 @@
+name: 'Unique Name Generator Action'
+description: 'Create a random name and output it to Github Actions environment variables'
+inputs:
+  separator:
+    description: 'What separator to use'
+    required: true
+    default: '-'
+  length: 
+    description: 'How many words in the name'
+    required: true
+    default: '2'
+  style:
+    description: 'Name output case style'
+    required: true
+    default: 'lowerCase'
+outputs:
+  name:
+    description: 'The random name output'
+runs:
+  using: 'node12'
+  main: 'index.js'
