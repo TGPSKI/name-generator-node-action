@@ -25,11 +25,11 @@ The generated random name output.
 ## Example usage
 
 ```
-uses: peternied/random-name@v1
+uses: TGPSKI/name-generator-node-action@v3
 ```
 
 ```
-uses: peternied/random-name@v1
+uses: TGPSKI/name-generator-node-action@v3
 id: random-name
 with:
   separator: '_'
@@ -39,8 +39,3 @@ with:
 name: test generator output
 run: echo "latest,${{ steps.random-name.outputs.generated_name }}"
 ```
-
-# Changelog
-
-## v1
-- Initial Release, fork of [TGPSKI/name-generator-node-action](https://github.com/TGPSKI/name-generator-node-action)
