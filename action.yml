@@ -17,5 +17,5 @@ outputs:
   name:
     description: 'The generated random name output.'
 runs:
-  using: 'node12'
+  using: 'node16'
   main: 'dist/index.js'

@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/TGPSKI/name-generator-node-action#readme",
   "dependencies": {
-    "@actions/core": "^1.2.4",
-    "unique-names-generator": "^4.2.0"
+    "@actions/core": "^1.5.0",
+    "unique-names-generator": "^4.7.1"
   }
 }

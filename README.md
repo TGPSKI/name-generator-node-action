@@ -18,7 +18,7 @@ This action creates a random name and outputs it to Github Actions environment v
 
 ## Outputs
 
-### `name`
+### `generated_name`
 
 The generated random name output.
 
@@ -37,5 +37,5 @@ with:
   style: 'upperCase'
 
 name: test generator output
-run: echo "latest,${{ steps.generator.outputs.name }}"
+run: echo "latest,${{ steps.generator.outputs.generated_name }}"
 ```
