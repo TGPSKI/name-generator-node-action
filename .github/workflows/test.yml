@@ -14,12 +14,13 @@ jobs:
     steps:
         - uses: actions/checkout@v4
     
-        - uses: ./ # Use the action
-          id: name-gen
+        - id: name-gen
+          uses: ./ # Use the action
 
         - run: | 
-            size=$(echo ${{ steps.name-gen.outputs.generated-name}} | wc -m)
+            size=$(echo ${{ steps.name-gen.outputs.generated-name }} | wc -m)
             if [ $size -lt 4 ]; then
-                echo "Resulting name was too small got ${{ steps.name-gen.outputs.generated-name}} with size $size"
+                echo "Resulting name was too small got ${{ steps.name-gen.outputs.generated-name }} with size $size"
                 exit 1;
             fi
+          shell: bash
